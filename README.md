@@ -12,14 +12,14 @@
 ## Sobre 
 Para desenvolver o conteúdo abordado no tópico de Programação Dinâmica, a dupla selecionou alguns exercícios em um juiz online - o LeetCode -, sendo eles, de nível médio ou difícil. Para obter mais informações sobre os enunciados propostos, basta clicar no link que aparece no título de cada um.
 
-### 🔗 [218: The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/)
- Resumo: Dado uma lista de prédios (com início, fim e altura), determinar os pontos-chave do contorno do skyline (horizonte da cidade) visto de longe, removendo sobreposições e mantendo apenas os pontos onde a altura muda.
+### 🔗 [322. Coin Change]([https://leetcode.com/problems/the-skyline-problem/description/](https://leetcode.com/problems/coin-change/description/))
+ Resumo: O problema Coin Change (LeetCode 322) pede o menor número de moedas de valores disponíveis necessárias para totalizar exatamente um valor amount, retornando -1 se não for possível. A ideia é calcular, de forma eficiente, a menor quantidade de moedas para formar qualquer valor até amount, considerando que cada moeda pode ser usada quantas vezes forem necessárias.
 
-- Nível de dificuldade: Difícil
+- Nível de dificuldade: Médio
 
-### 🧠 Algoritmo utilizado: Adaptação do par de pontos mais próximos. 
+### 🧠 Algoritmo utilizado:  
 
-Divide os prédios ao meio recursivamente e faz merge de dois skylines mantendo a maior altura em cada x, evitando pontos redundantes.
+A solução utiliza programação dinâmica top-down com memoization, implementada por uma função recursiva que tenta todas as possibilidades de moedas para subtrair do valor restante (rem). Se rem chegar a zero, significa que o valor foi formado, e retorna zero; se ficar negativo, retorna -1, indicando impossibilidade. Para cada chamada, o menor número de moedas encontrado é armazenado em um dicionário (memo) para evitar recomputações. Ao final, a função retorna a menor quantidade de moedas para amount ou -1 caso não exista combinação possível. Essa abordagem explora a característica de subproblemas sobrepostos e optimal substructure, reduzindo a complexidade do problema por meio do cache de resultados parciais.
 
 ---
 
