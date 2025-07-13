@@ -23,9 +23,20 @@ A solução utiliza programação dinâmica top-down com memoization, implementa
 
 ---
 
+## 🔗 [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+Resumo: O problema Longest Common Subsequence (LeetCode 1143) pede o tamanho da maior subsequência comum entre duas strings dadas, ou seja, a maior sequência de caracteres que aparece em ambas as strings na mesma ordem, mas não necessariamente de forma contígua. Este problema é clássico em programação dinâmica e aparece frequentemente em bioinformática e comparação de textos, sendo diretamente relacionado ao tópico de sequence alignment.
+
+- Nível de dificuldade: Médio
+
+### 🧠 Algoritmo utilizado:  
+A solução utiliza programação dinâmica bottom-up, construindo uma matriz dp onde dp[i][j] representa o tamanho da maior subsequência comum entre os primeiros i caracteres de text1 e os primeiros j caracteres de text2. Se os caracteres atuais das duas strings são iguais, incrementa-se em 1 o valor da célula correspondente ao subproblema anterior (dp[i-1][j-1]). Caso contrário, toma-se o máximo entre ignorar o caractere atual de text1 ou de text2. Ao final, o valor em dp[m][n] fornece o tamanho da maior subsequência comum. Essa abordagem explora a característica de subproblemas sobrepostos e optimal substructure, reduzindo a complexidade para 𝑂(𝑚 × 𝑛), sendo eficiente mesmo para entradas grandes.
+
 ## Screenshots
-- Problema 218
-<img width="734" alt="621" src="screenshots/218.png">
+- Problema 322
+<img width="734" alt="621" src="screenshots/322.png">
+
+- Problema 1143
+<img width="734" alt="621" src="screenshots/322.png">
 
 ## Instalação 
 
