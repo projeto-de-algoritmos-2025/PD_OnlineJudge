@@ -36,7 +36,7 @@ A solução utiliza programação dinâmica bottom-up, construindo uma matriz dp
 <img width="734" alt="621" src="screenshots/322.png">
 
 - Problema 1143
-<img width="734" alt="621" src="screenshots/322.png">
+<img width="734" alt="621" src="screenshots/1143.png">
 
 ## Instalação 
 
